@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>loginpage</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.logo
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.tab
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	gap: 5px;
+}
+.mar
+{
+	display: flex;
+	align-items: center;
+	justify-content:sideby;
+}
+.reg-form
+{
+	
+	box-sizing: border-box;
+	border: 1px solid black ;
+	padding: 20px;
+	
+}
+</style>
+</head>
+<body>
+	
+		<div class="logo">
+		<img src="banklogo.jpg" height="100" width="100">
+		<div>
+			<h1 style="color: darkmagenta;">SHREE BANK</h1>
+			<H3 style="color: darkgreen";  >All in one place..!</H3>
+		</div>
+		</div>
+	
+	<div class="topnav">
+  <a class="active" href="home.html">Home</a>
+  <a href="newaccount.html">New Account</a>
+  <a href="balance.html">Balance</a>
+  <a href="deposit.html">Deposite</a>
+  <a href="withdraw.html">Withdraw</a>
+  <a href="trasfer.html">Transfer</a>
+  <a href="closeac.html">Close A/C</a>
+  <a href="about.html">About Us</a>
+</div>
+	<center><h2 style="color: navy;">Transfer Form</h2></center>
+	<div class="tab">
+		
+		<form action="Transfer" method="post" class="reg-form">
+			
+			Account No:<input type="number" name="ano"><br><br>
+			Name:<input type="text" name="n"><br><br>
+			Password:<input type="password" name="password"><br><br>
+			Target Account No:<input type="number" name="tano"><br><br>
+			Amount:<input type="number" name="amt"><br><br>
+			
+			
+				<input type="submit" value="Submit">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				<input type="reset" value="clear">
+			
+		</form>
+	</div>
+<br>
+
+</body>
+</html>
